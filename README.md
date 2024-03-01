@@ -34,7 +34,7 @@ few instructions in the language that the introductory comment in the interprete
 
 ## Tips
 
-Tips for golfing are available for Prolog language and as general pointers:
+Tips for golfing are available for the JASIC language and as general pointers:
 
 * [JASIC Interpreter](https://github.com/munificent/jasic/blob/master/com/stuffwithstuff/Jasic.java)
 * [General tips for golfing with any language](https://codegolf.stackexchange.com/questions/5285/tips-for-golfing-in-all-languages)
