@@ -29,6 +29,8 @@ When we write "print all squares", we mean that the output should look something
 
 ### Note to players
 
+Once again, word to the homie, [@munificent](https://github.com/munificent) for the `Lark` language.
+
 This language is Aya-like; there's syntactic sugar that makes shortening our work possible. The official commissioner's suggestion is 
 to solve it "long-hand" and then look at shortening it.
 
