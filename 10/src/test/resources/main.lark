@@ -1,0 +1,6 @@
+def: squares is: [n] => (
+  print (n * n);
+  if: n = 100 then: n = 0 else: squares (+) (n, 1);
+)
+
+squares 1

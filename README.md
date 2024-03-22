@@ -1,31 +1,36 @@
 ![Green square on deep blue background with words "Allegheny Code Golf Association" in foreground, white](https://github.com/allegheny-college-cmpsc-201-spring-2024/golf/assets/1552764/d3ee6a91-74c9-482b-84eb-ec9a2e8dee05)
 
-[![Language: Aya](https://img.shields.io/badge/Language-Aya-gray.svg)](https://aya-readthedocs.readthedocs.io/en/latest/index.html)
-![Par: 176 bytes](https://img.shields.io/badge/Par-176_bytes-green)
+[![Language: Lark](https://img.shields.io/badge/Language-Lark-yellow.svg)](https://github.com/munificent/lark)
+![Par: 108 bytes](https://img.shields.io/badge/Par-108_bytes-green)
 
-# ⛳ Code Golf: Hole 9 - It Might Be a Leap Year, But What If It Aya-n't?
+# ⛳ Code Golf: Hole 10 - It's Hip to be a Square
 
-Not every year can be special. That's OK! But, that doesn't stop some years from _leaping with joy_ at their own uniqueness. These,
-as the Commissioner has learned, are called _leap years_. There are some rules as to what constitutes a leap year. For example:
+Your task seems deceptively simple: print all squares from `1` to `100`. _But_ what happens when a language is _completely function-oriented_
+and _lacks proper iterators_? Well, on a `Lark` (funny joke, Commissioner), we're going to find out.
 
-* 1. the year must be divisble by `4`
-  * but _not_ divisible by `100`
-* 2. _or_ the year must be divisble by `400`
+When we write "print all squares", we mean that the output should look something like:
+```bash
+1
+4
+9
+16
+25
+36
+49
+64
+81
+100
+.
+.
+.
+```
 
-Why is it important that we keep track of this information? No idea. But the challenge of writing it in a heretofore unknown
-language sounds fun. So, we do it. As a wise person once said:
-> Anything worth doing is worth doing.
-So, we're going to _take it to the max_, and check what years from `1300` to `3100` will be leap years.
-
-This repository uses the Apache Maven build platform to compile the entire interpreter (provided in the `9/src` folder).
-The challenge must be completed in the `Aya` file located at:
-
-* [9/src/test/resources/main.aya](9/src/test/resources/main.aya)
+* [10/src/test/resources/main.lark](10/src/test/resources/main.aya)
 
 ### Note to players
 
-The Aya language is a proper golf language _and_ has an expanded real syntax. Once you solve the longer-hand "real" version,
-you'll gain extra by trying to golf the solution further by taking advantage of Aya's compressed syntax.
+This language is Aya-like; there's syntactic sugar that makes shortening our work possible. The official commissioner's suggestion is 
+to solve it "long-hand" and then look at shortening it.
 
 ## Tips
 
@@ -33,15 +38,16 @@ Tips for golfing are available as general pointers:
 
 * [General tips for golfing with any language](https://codegolf.stackexchange.com/questions/5285/tips-for-golfing-in-all-languages)
 
-There exists a deep `readthedocs` site for the Aya language, located here:
+There exists a `README` and some examples of the langauge in the language repository:
 
-* [Aya Language docs](https://aya-readthedocs.readthedocs.io/en/latest/index.html)
+* [Lark Language `README`](https://github.com/munificent/lark)
+* [Lark Language examples](https://github.com/munificent/lark/tree/master/sample)
 
 ## Requirements
 
-* this challenge must be completed using the `Aya` language
-* the program must be written in the `8/src/test/resources/main.aya` file
-* the program's output must span the numbers `1300` to `3100`
+* this challenge must be completed using the `Lark` language
+* the program must be written in the `10/src/test/resources/main.lark` file
+* the program's output must span the numbers `1` to `100`
 
 ## Infrastructure
 
