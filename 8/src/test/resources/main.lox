@@ -1,7 +1,1 @@
-fun length(number) {
-  return number;
-}
-
-for(var i = -14900; i <= 19890; i = i + 908){
-  print length(i);
-}
+fun p(n,c){return(n<1)?c:p(n/10,c+1);}for(var i=-14900;i<19891;i=i+908)print p(i>0?i:-i,0);
