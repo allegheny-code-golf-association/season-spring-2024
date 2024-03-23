@@ -1,4 +1,1 @@
-for (var i = 1; i <= 1000; i = i + 1) {
-  var result = i;
-  print result;
-}
+fun m(o,d){return o<d?o>0:m(o-d,d);}for(var i=1;i<1001;i=i+1){var x=m(i,3)?"":"Fizz";print m(i,5)?x==""?i:x:x+"Buzz";}
