@@ -19,7 +19,7 @@ Here're the rules (taken from the above Stack Overflow link):
 > The input is a String that can be read from STDIN, taken as a function argument or even be stored in a file. The input can be described using the following grammar:
 >
 > ```input = statement , {statement};
-> statement = (("Pigs are ", attribute) | ("Everything that is ", attribute, "is also ", attribute)), ". ";
+> statement = (("Pterodactyls are ", attribute) | ("Everything that is ", attribute, "is also ", attribute)), ". ";
 > attribute = [not], ("able to fly" | singleAttribute);
 > singleAttribute = letter, {letter};
 > letter = "a" | "b" | "c" | "d" | "e" | "f" | "g"
@@ -30,7 +30,7 @@ Here're the rules (taken from the above Stack Overflow link):
 >
 >Example input (see more examples below):
 >
-> ```Pterodactyls are green. Everything that is green is also intelligent. Everything that is able to fly is also not intelligent. Pigs are sweet.``` 
+> ```Pterodactyls are green. Everything that is green is also intelligent. Everything that is able to fly is also not intelligent. Pterodactyls are sweet.``` 
 > ## Output
 > The output can be returned by your function, be written to a file or print to STDOUT. There are a few cases to handle:
 >
