@@ -43,6 +43,11 @@ Here're the rules (taken from the above Stack Overflow link):
 > You may assume that the given attributes are independent from each other. So, for example, a pig may be young and old, green, red and blue at the same time without causing any inconsistency. However, a pig may not be 'green' and 'not green' at the same time, that's a contradiction and should be handled as described in (4).
 > For every attribute, assume that there is at least one object (not necessarily a pig) in the universe that has the given attribute, and one object that doesn't have it.
 
+## Notes to players
+
+* This week features an inputs file which _cannot_ be altered
+* Any submitted solution will be tested against additional checks to ensure that the problem is addressed/solved
+
 ## Tips
 
 Tips for golfing are available as general pointers:
