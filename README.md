@@ -5,14 +5,41 @@
 
 # ⛳ Code Golf: Hole 11 - It's a bird! It's a plane! It's a...ptero-Jactl?
 
+(This challenge was originally posted as the [Stack Overflow Code Golf challenge: "Are Pigs able to fly?"](https://codegolf.stackexchange.com/questions/35623/are-pigs-able-to-fly).)
 
+This challenge is partly an exploration of programming grammar and an equal dose logic game. this week we use the `Jactl` language 
+in an effort to determine whether or not a given combination of statements indicates that a given pterodactyl actually flies. For
+example:
+> Pterodactyls are old. Everything that is not able to fly is also not old.
+Our question: does this pterodactyl fly? Well, it is old, and all things _not old_ (i.e. young) _don't_ fly. So, our answer: `Yes`.
 
-### Note to players
+Here're the rules (taken from the above Stack Overflow link):
 
-Once again, word to the homie, [@munificent](https://github.com/munificent) for the `Lark` language.
-
-This language is Aya-like; there's syntactic sugar that makes shortening our work possible. The official commissioner's suggestion is 
-to solve it "long-hand" and then look at shortening it.
+> ## Input
+> The input is a String that can be read from STDIN, taken as a function argument or even be stored in a file. The input can be described using the following grammar:
+>
+> ```input = statement , {statement};
+> statement = (("Pigs are ", attribute) | ("Everything that is ", attribute, "is also ", attribute)), ". ";
+> attribute = [not], ("able to fly" | singleAttribute);
+> singleAttribute = letter, {letter};
+> letter = "a" | "b" | "c" | "d" | "e" | "f" | "g"
+>        | "h" | "i" | "j" | "k" | "l" | "m" | "n"
+>        | "o" | "p" | "q" | "r" | "s" | "t" | "u"
+>        | "v" | "w" | "x" | "y" | "z" ;
+> ```
+>
+>Example input (see more examples below):
+>
+> ```Pterodactyls are green. Everything that is green is also intelligent. Everything that is able to fly is also not intelligent. Pigs are sweet.``` 
+> ## Output
+> The output can be returned by your function, be written to a file or print to STDOUT. There are a few cases to handle:
+>
+>* The given statements are valid, consistent and have as a logical consequence that [pterodactyls] can fly. In that case, you must output `Yes`.
+>* The given statements are valid, consistent and have as a logical consequence that [pterodactyls] can not fly. In that case, you must output `No`.
+>* It can not be concluded from the given, valid and consistent statements whether [pterodactyls] can fly or not. In that case, you must output `Maybe`.
+> ## Details
+> You may assume that the given attributes are independent from each other. So, for example, a pig may be young and old, green, red and blue at the same time without causing any inconsistency. However, a pig may not be 'green' and 'not green' at the same time, that's a contradiction and should be handled as described in (4).
+> For every attribute, assume that there is at least one object (not necessarily a pig) in the universe that has the given attribute, and one object that doesn't have it.
 
 ## Tips
 
