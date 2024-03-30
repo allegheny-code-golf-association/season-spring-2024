@@ -1,6 +1,6 @@
 setup: |
-  echo "🏌️    [Score] $(wc -c 10/src/test/resources/main.lark | awk '{print $1}') bytes"
+  echo "🏌️    [Score] $(wc -c 11/src/test/resources/main.jactl | awk '{print $1}') bytes"
 ---
-- description: \[Round 10] Executes successfully
+- description: \[Round 11] Executes successfully
   category: Round 9
-  command: mvn clean compile test -U -f '10/pom.xml'
+  command: mvn clean compile test -U -f '11/pom.xml'

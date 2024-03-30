@@ -1,31 +1,11 @@
 ![Green square on deep blue background with words "Allegheny Code Golf Association" in foreground, white](https://github.com/allegheny-college-cmpsc-201-spring-2024/golf/assets/1552764/d3ee6a91-74c9-482b-84eb-ec9a2e8dee05)
 
-[![Language: Lark](https://img.shields.io/badge/Language-Lark-yellow.svg)](https://github.com/munificent/lark)
-![Par: 108 bytes](https://img.shields.io/badge/Par-108_bytes-green)
+[![Language: Jactl](https://img.shields.io/badge/Language-Jactl-blue.svg)](https://jactl.io/)
+![Par: 1648 bytes](https://img.shields.io/badge/Par-1648_bytes-green)
 
-# ⛳ Code Golf: Hole 10 - It's Hip to be a Square
+# ⛳ Code Golf: Hole 11 - It's a bird! It's a plane! It's a...ptero-Jactl?
 
-Your task seems deceptively simple: print all squares from `1` to `100`. _But_ what happens when a language is _completely function-oriented_
-and _lacks proper iterators_? Well, on a `Lark` (funny joke, Commissioner), we're going to find out.
 
-When we write "print all squares", we mean that the output should look something like:
-```bash
-1
-4
-9
-16
-25
-36
-49
-64
-81
-100
-.
-.
-.
-```
-
-* [10/src/test/resources/main.lark](10/src/test/resources/main.aya)
 
 ### Note to players
 
@@ -40,16 +20,16 @@ Tips for golfing are available as general pointers:
 
 * [General tips for golfing with any language](https://codegolf.stackexchange.com/questions/5285/tips-for-golfing-in-all-languages)
 
-There exists a `README` and some examples of the langauge in the language repository:
+There exists a `README` and a fairly deep page for the langauge:
 
-* [Lark Language `README`](https://github.com/munificent/lark)
-* [Lark Language examples](https://github.com/munificent/lark/tree/master/sample)
+* [Jactl Language `README`](https://github.com/jaccomoc/jactl)
+* [Jactl Language site](https://jactl.io/)
 
 ## Requirements
 
-* this challenge must be completed using the `Lark` language
-* the program must be written in the `10/src/test/resources/main.lark` file
-* the program's output must span the numbers `1` to `100`
+* this challenge must be completed using the `Jactl` language
+* the program must be written in the `10/src/test/resources/main.jactl` file
+* the program's output must evaluate the `10` sentences in the main.input file
 
 ## Infrastructure
 

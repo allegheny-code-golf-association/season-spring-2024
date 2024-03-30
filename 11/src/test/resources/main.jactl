@@ -52,7 +52,7 @@ def parse(line) {
   def lines = line.split("\\.")
   for(int i = 0; i < lines.size() - 1; i++) {
     switch(lines[i]) {
-      /Pigs are (.*)/r -> clause.givens += $1
+      /Pterodactyls are (.*)/r -> clause.givens += $1
       /Everything that (?:is|are) (.*) (?:is|are) also (.*)/r -> do { 
         // Update givens to match synonymous definitions
         if($1 in clause.givens) {
@@ -73,6 +73,5 @@ def line;
 def clause;
 while ((line = nextLine()) != null) { 
   clause = parse(line)
-  print(clause)
   println clause.getAbility()
 }
