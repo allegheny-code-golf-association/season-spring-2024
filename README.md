@@ -10,7 +10,9 @@
 This challenge is partly an exploration of programming grammar and an equal dose logic game. this week we use the `Jactl` language 
 in an effort to determine whether or not a given combination of statements indicates that a given pterodactyl actually flies. For
 example:
+
 > Pterodactyls are old. Everything that is not able to fly is also not old.
+
 Our question: does this pterodactyl fly? Well, it is old, and all things _not old_ (i.e. young) _don't_ fly. So, our answer: `Yes`.
 
 Here're the rules (taken from the above Stack Overflow link):
