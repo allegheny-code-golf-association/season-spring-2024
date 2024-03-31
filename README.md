@@ -48,6 +48,24 @@ Here're the rules (taken from the above Stack Overflow link):
 * This week features an inputs file which _cannot_ be altered
 * Any submitted solution will be tested against additional checks to ensure that the problem is addressed/solved
 
+The correct output appears as follows:
+```
+No
+Yes
+Maybe
+Maybe
+No
+Yes
+Maybe
+Yes
+Yes
+```
+
+### Program termination
+
+For some players, `mvn exec:java -q` might not terminate the program. To force the program to exit, press `CTRL` + `C`. 
+`mvn test` will run and terminate successfully if the output is correct.
+
 ## Tips
 
 Tips for golfing are available as general pointers:

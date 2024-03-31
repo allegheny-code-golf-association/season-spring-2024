@@ -315,7 +315,6 @@ public class Jactl {
       }
       System.exit(1);
     }
-
     //System.exit(0);
   }
 

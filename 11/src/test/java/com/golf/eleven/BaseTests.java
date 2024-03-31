@@ -9,11 +9,18 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.Assert.*;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import org.junit.contrib.java.lang.system.ExpectedSystemExit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -31,6 +38,9 @@ class BaseTests {
 
   private final PrintStream originalOut = System.out;
   private final PrintStream originalErr = System.err;
+
+  @Rule
+  public final ExpectedSystemExit exit = ExpectedSystemExit.none();
 
   @BeforeAll
   public void setUpStreams() {
@@ -57,13 +67,17 @@ class BaseTests {
   }
 
   @MethodSource
+  @Test
   @ParameterizedTest
   void testProgramOutput(String[] args) throws Exception {
+    exit.expectSystemExitWithStatus(0);
     Jactl.main(args);
-    assertEquals(
-      getFullProgramTestOutput().trim(),
-      outContent.toString().strip()
-    );
+    exit.checkAssertionAfterwards(() -> {
+      assertEquals(
+        getFullProgramTestOutput().trim(),
+        outContent.toString().strip()
+      );
+    });
   }
 
   @AfterAll
