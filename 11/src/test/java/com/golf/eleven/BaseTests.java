@@ -72,12 +72,10 @@ class BaseTests {
   void testProgramOutput(String[] args) throws Exception {
     exit.expectSystemExitWithStatus(0);
     Jactl.main(args);
-    exit.checkAssertionAfterwards(() -> {
-      assertEquals(
-        getFullProgramTestOutput().trim(),
-        outContent.toString().strip()
-      );
-    });
+    assertEquals(
+      getFullProgramTestOutput().trim(),
+      outContent.toString().strip()
+    );
   }
 
   @AfterAll
