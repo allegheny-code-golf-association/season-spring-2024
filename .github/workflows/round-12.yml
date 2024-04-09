@@ -1,8 +1,8 @@
-name: Round 11
+name: Round 12
 
 on:
   push:
-    branches: [round-11]
+    branches: [round-12]
 
 jobs: 
   Score:
@@ -29,11 +29,11 @@ jobs:
         sudo python -m pip install --upgrade pip
         sudo python -m pip install gatorgrade --ignore-installed PyYAML
       if: always()
-    - name: Score Round 11
+    - name: Score Round 12
       id: score
       run: |
-        export PAR=1648
-        export BYTE_SCORE=$(wc -c 11/src/test/resources/main.jactl | awk '{print $1}')
+        export PAR=1243
+        export BYTE_SCORE=$(wc -c 12/src/main/java/com/golf/twelve/Main.java | awk '{print $1}')
         export DIFFERENCE=$((BYTE_SCORE-PAR))
         gatorgrade --config gatorgrade.yml --report file json gatorgrade_summary.json
         cat > $GITHUB_STEP_SUMMARY << EOF

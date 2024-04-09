@@ -73,7 +73,7 @@
           <executable>java</executable>
           <mainClass>com.golf.twelve.Main</mainClass>
           <arguments>
-            <argument>20</argument>
+            <argument>3</argument>
           </arguments>
       </configuration>
       </plugin>
