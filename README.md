@@ -35,6 +35,7 @@ scalable to any number of characters on screen. In practice, this looks like the
 
 * This week's tests check three arbitrary art sizes, not just the `3` included in the `pom.xml` file
 * The center character in the above art is the letter `O`, not the number zero
+* To check results of this challenge's work, the test framework uses `checksums` to verify content; the easiest way to ensure you're "doing the right thing" is to change the `<argument>...</argument>` in the `12/pom.xml` file to reflect the size of sun you're trying to make
 
 ### Program termination
 
