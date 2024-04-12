@@ -2,11 +2,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
  
-  <groupId>com.golf.twelve</groupId>
-  <artifactId>twelve</artifactId>
-  <version>0.12.0</version>
+  <groupId>com.interpreter.codelike</groupId>
+  <artifactId>thirteen</artifactId>
+  <version>0.13.0</version>
  
-  <name>HoleTwelve</name>
+  <name>HoleThirteen</name>
   <url>https://github.com/allegheny-college-cmpsc-201-spring-2024</url>
  
   <properties>
@@ -71,9 +71,9 @@
       <version>1.4.0</version>
       <configuration>
           <executable>java</executable>
-          <mainClass>com.golf.twelve.Main</mainClass>
+          <mainClass>com.interpreter.codelike.Interpreter</mainClass>
           <arguments>
-            <argument>3</argument>
+            <argument>${session.executionRootDirectory}/src/test/resources/main.txt</argument>
           </arguments>
       </configuration>
       </plugin>
