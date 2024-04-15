@@ -260,7 +260,7 @@ public class Interpreter{
 						System.out.println("b: Printing the integer value on the top of the stack");
 					}
 					try {
-						System.out.print(stack.get(stack.size()-1));
+						System.out.println(stack.get(stack.size()-1));
 						if(debugging){
 							System.out.println("");
 						}
@@ -389,7 +389,6 @@ public class Interpreter{
 					}
 					try{
 						Scanner user = new Scanner(System.in);
-						
 						int input = user.nextInt();
 						stack.add(input);
 						cont();
@@ -397,6 +396,30 @@ public class Interpreter{
 						error("Input must be an integer");
 					}
 						break;
+        case "z":
+          if(debugging) {
+            System.out.println("z: copying previous value to stack");
+          }
+          try {
+            int positionValue = stack.get(stack.size() - 1);
+            int targetValue = stack.get(stack.size() - positionValue);
+            stack.add(targetValue);
+            cont();
+          } catch (ArrayIndexOutOfBoundsException e) {
+            error("Location beyond bounds of stack");
+          }
+          break;
+        case "v":
+          if(debugging) {
+            System.out.println("v: print the number of values currently on the stack");
+          }
+          try{
+            System.out.println(stack.size());
+            cont();
+          } catch (Exception e) {
+            error("No values on the stack to count");
+          }
+          break;
 				default:
 					error("Unknown character: " + map[vPos][hPos]);
 					break;
