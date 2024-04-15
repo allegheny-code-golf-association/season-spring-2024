@@ -1,8 +1,8 @@
-name: Round 12
+name: Round 13
 
 on:
   push:
-    branches: [round-12]
+    branches: [round-13]
 
 jobs: 
   Score:
@@ -32,8 +32,8 @@ jobs:
     - name: Score Round 12
       id: score
       run: |
-        export PAR=1243
-        export BYTE_SCORE=$(wc -c 12/src/main/java/com/golf/twelve/Main.java | awk '{print $1}')
+        export PAR=144
+        export BYTE_SCORE=$(wc -c 13/src/test/resources/main.txt | awk '{print $1}')
         export DIFFERENCE=$((BYTE_SCORE-PAR))
         gatorgrade --config gatorgrade.yml --report file json gatorgrade_summary.json
         cat > $GITHUB_STEP_SUMMARY << EOF

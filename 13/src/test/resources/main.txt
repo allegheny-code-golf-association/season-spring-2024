@@ -1,23 +1,2 @@
-c-c
-  |
-  n
-  +
-  +
-  u
-o-d--o
-| |  |
-o-c  |
-  n  | 
-  +  |
-  +  |
-  z  |
-  b  |
-  o  |
-  ^  |
- o c |
- f | |
- f | |
- v | |
- e o |
-    \|
-     o
+n today is a good day to golf
+e
