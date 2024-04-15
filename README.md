@@ -29,6 +29,10 @@ taken it upon ourselves to write in a couple instructions to make this week poss
 0
 9
 ```
+* this program requires _user input_: it _will not prompt you_ for input and will wait for input instead
+  * this means that the `u` command is necessary for this program to function and test correctly
+* to assist players there is a `debugging` mode; to enable this, go to the interpreter source and set the `debugging` variable to `true`
+  * be sure to turn it off before you submit!
 
 ## Tips
 
