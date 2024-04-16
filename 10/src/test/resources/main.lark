@@ -1,1 +1,2 @@
-# Today is a good day to golf.
+def: s is: n => (print(n * n);if: n > 99 then: 0 else: s(1 + n))
+s 1
