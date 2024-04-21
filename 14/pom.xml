@@ -73,6 +73,7 @@
           <executable>java</executable>
           <mainClass>cfh.taxi.cli.Main</mainClass>
           <arguments>
+            <argument>default.map</argument>
             <argument>${session.executionRootDirectory}/src/test/resources/main.txt</argument>
           </arguments>
       </configuration>
@@ -90,7 +91,7 @@
           </dependencies>
           <configuration>
             <additionalClasspathElements>
-    					<additionalClasspathElement>${session.executionRootDirectory}/src/test/java/com/golf/nine/*Tests.java</additionalClasspathElement>
+    					<additionalClasspathElement>${session.executionRootDirectory}/src/test/java/com/golf/fourteen/*Tests.java</additionalClasspathElement>
             </additionalClasspathElements>
     			</configuration>
         </plugin>

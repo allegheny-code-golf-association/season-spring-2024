@@ -16,6 +16,7 @@ import java.util.Arrays;
 import java.util.IllegalFormatConversionException;
 import java.util.List;
 import java.util.Locale;
+import java.util.Scanner;
 import java.util.prefs.Preferences;
 import java.io.File;
 import java.nio.file.Files;
@@ -42,6 +43,7 @@ public class Main {
 
   private static void compile(RoadMap map, String programText) throws TaxiException {
       Program prg;
+      Scanner cliReader = new Scanner(System.in);
       Program.InputOutput inpout = new Program.InputOutput() {
         @Override
         public void print(String format, Object... args) {
@@ -68,7 +70,8 @@ public class Main {
 
         @Override
         public String readLine() {
-          return null;
+          System.out.print("Input passenger to wait at Post Office: ");
+          return cliReader.nextLine();
         }
 
       };
