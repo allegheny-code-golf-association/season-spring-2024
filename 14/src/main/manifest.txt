@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: cfh.taxi.gui.Main
+Implementation-Vendor: Carlos Heuberger
+
