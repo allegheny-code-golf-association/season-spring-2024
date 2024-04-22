@@ -23,6 +23,11 @@ That's great. What's even greater? Implementing the functionality in a language 
 This challenge uses a language called `Taxi`, which doesn't leave much room for proper golfing. In short, the language is all about driving a (you
 guessed it), _taxi_. 
 
+## Credits
+
+* the `Taxi` language was developed by @bigzaphod
+* this implementation of the language (in Java) is due to the work of @CHeuberger
+
 ## Notes to players
 
 * this challenge must pass `3` checks using user input; these are:
