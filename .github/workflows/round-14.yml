@@ -37,7 +37,7 @@ jobs:
         export DIFFERENCE=$((BYTE_SCORE-PAR))
         gatorgrade --config gatorgrade.yml --report file json gatorgrade_summary.json
         cat > $GITHUB_STEP_SUMMARY << EOF
-        ![Score: $(echo $BYTE_SCORE) bytes](https://img.shields.io/badge/Score-$(echo $BYTE_SCORE)_bytes_($DIFFERENCE)-green)
+        ![Score: $(echo ${BYTE_SCORE#-}) bytes](https://img.shields.io/badge/Score-$(echo $BYTE_SCORE)_bytes_(${DIFFERENCE#-})-green)
         EOF
         if [ $DIFFERENCE -eq 0 ]; then echo "[ERROR] ROUND HAS NOT BEEN PLAYED!"; exit 1; fi
       if: always()
