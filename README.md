@@ -39,7 +39,7 @@ guessed it), _taxi_.
 * this program is not assessed in _bytes_, but in total units traveled; your goal is to complete the problems in the shortest amount of
 covered distance possible
   * however, the `gatorgrader` setup for this round _still_ ensures that the round is played via byte count
- 
+  * running `mvn test` will contain an additional message displaying total units traveled above test passage 
 ## Special `Taxi` language resources
 
 The creator of the language, @bigzaphod, provides a helpful map for our endeavor:
