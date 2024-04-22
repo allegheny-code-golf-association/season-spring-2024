@@ -25,8 +25,8 @@ guessed it), _taxi_.
 
 ## Credits
 
-* the `Taxi` language was developed by @bigzaphod
-* this implementation of the language (in Java) is due to the work of @CHeuberger
+* the `Taxi` language was developed by [@bigzaphod](https://github.com/bigzaphond)
+* this implementation of the language (in Java) is due to the work of [@CHeuberger](https://github.com/CHeuberger)
 
 ## Notes to players
 
