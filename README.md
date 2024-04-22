@@ -2,6 +2,7 @@
 
 [![Language: Taxi](https://img.shields.io/badge/Language-Taxi-yellow.svg)](https://bigzaphod.github.io/Taxi/)
 ![Par: 1,336.40 units]((https://img.shields.io/badge/Par-1336.40_units-green))
+![Par: 2902 bytes]((https://img.shields.io/badge/Par-2902_bytes-green))
 
 # ⛳ Code Golf: Hole 14 - Going the Distance
 
@@ -30,9 +31,10 @@ guessed it), _taxi_.
   * `fun house -> big manor`
 * to test, there exists a `debug` mode
   * see [14/src/main/java/cfh/taxi/cli/Main.java](14/src/main/java/cfh/taxi/cli/Main.java) for more
-* This program is not assessed in _bytes_, but in total units traveled; your goal is to complete the problems in the shortest amount of
+* this program is not assessed in _bytes_, but in total units traveled; your goal is to complete the problems in the shortest amount of
 covered distance possible
-
+  * however, the `gatorgrader` setup for this round _still_ ensures that the round is played via byte count
+ 
 ## Special `Taxi` language resources
 
 The creator of the language, @bigzaphod, provides a helpful map for our endeavor:
