@@ -30,7 +30,7 @@ guessed it), _taxi_.
 
 ## Notes to players
 
-* this challenge must pass `3` checks using user input; these are:
+* this challenge must pass `3` checks using user input<sup>†</sup> -- these are:
   * `trial -> trail`
   * `shoe tome -> tone poem`
   * `fun house -> big manor`
@@ -40,6 +40,11 @@ guessed it), _taxi_.
 covered distance possible
   * however, the `gatorgrader` setup for this round _still_ ensures that the round is played via byte count
   * running `mvn test` will contain an additional message displaying total units traveled above test passage 
+* the taxi _must_ return to the garage at the end of the program
+
+<sup>†</sup>: the recommended approach is for the program to only solve one input and then finish; the test cases are written under this
+assumption.
+
 ## Special `Taxi` language resources
 
 The creator of the language, @bigzaphod, provides a helpful map for our endeavor:
