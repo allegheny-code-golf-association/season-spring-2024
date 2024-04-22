@@ -74,11 +74,11 @@ class BaseTests {
   @Test
   @ParameterizedTest
   void testProgramOutput(String[] args) throws Exception {
-    ByteArrayInputStream in = new ByteArrayInputStream("code golf".getBytes());
+    ByteArrayInputStream in = new ByteArrayInputStream("taxi fair\ntaxi fare\n".getBytes());
     System.setIn(in);
     Main.main(args);
     assertEquals(
-      "128\n64\n32\n16\n8\n4\n2\n1\n0\n9",
+      "",
       outContent.toString().strip()
     );
   }

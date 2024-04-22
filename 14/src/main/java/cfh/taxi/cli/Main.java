@@ -47,7 +47,7 @@ public class Main {
       Program.InputOutput inpout = new Program.InputOutput() {
         @Override
         public void print(String format, Object... args) {
-          System.out.print(String.format(format, args));
+          System.out.println(String.format(format, args));
         }
 
         @Override
@@ -94,10 +94,6 @@ public class Main {
     } catch (Exception ex) {
       ex.printStackTrace();
     }
-    //URL resource = Main.class.getClassLoader().getResource("main.txt");
-    //String file = Paths.get(resource.toURI()).toFile().getAbsolutePath();
-    //String program = new String(Files.readAllBytes(Paths.get(file)));
-    // Program file
     byte[] bytes = Files.readAllBytes(Paths.get(args[1]));
     String program = new String(bytes, Charset.defaultCharset());
     compile(RoadMap.load(stream), program);

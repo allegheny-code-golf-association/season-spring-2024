@@ -4,51 +4,53 @@ Pickup a passenger going to Chop Suey.
 
 Go to Chop Suey: north, 1st right, 1st left, 4th right, 1st left.
 
-[first input]
-
 Pickup a passenger going to Joyless Park.
-Switch to plan "store 1" if no one is waiting.
 Pickup a passenger going to Joyless Park.
-Switch to plan "store 1" if no one is waiting.
 Pickup a passenger going to Joyless Park.
-
-[store 1]
 
 Go to Joyless Park: south, 1st right, 1st left, 1st left.
 
 Go to Chop Suey: west, 1st right, 1st right, 1st left.
 
-Switch to plan "next" if no one is waiting.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
 
-Switch to plan "first input".
+Go to Joyless Park: south, 1st right, 1st left, 1st left.
 
-[next]
+Go to Chop Suey: west, 1st right, 1st right, 1st left.
 
-Go to the Post Office: south, 1st right, 1st left, 2nd right, 1st left.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+Pickup a passenger going to Joyless Park.
+
+Go to Joyless Park: south, 1st right, 1st left, 1st left.
+
+Go to the Post Office: west, 1st left, 1st right, 1st left.
 
 Pickup a passenger going to Chop Suey.
 
 Go to Chop Suey: north, 1st right, 1st left, 4th right, 1st left.
 
-[second input]
-
 Pickup a passenger going to Sunny Skies Park.
-Switch to plan "store 2" if no one is waiting.
 Pickup a passenger going to Sunny Skies Park.
-Switch to plan "store 2" if no one is waiting.
 Pickup a passenger going to Sunny Skies Park.
-
-[store 2]
 
 Go to Sunny Skies Park: north, 1st left, 3rd left, 1st left.
 
 Go to Chop Suey: south, 1st left, 1st right, 2nd left, 5th right, 1st left.
 
-Switch to plan "park" if no one is waiting.
+Pickup a passenger going to Sunny Skies Park.
+Pickup a passenger going to Sunny Skies Park.
+Pickup a passenger going to Sunny Skies Park.
 
-Switch to plan "second input".
+Go to Sunny Skies Park: north, 1st left, 3rd left, 1st left.
 
-[park]
+Go to Chop Suey: south, 1st left, 1st right, 2nd left, 5th right, 1st left.
+
+Pickup a passenger going to Sunny Skies Park.
+Pickup a passenger going to Sunny Skies Park.
+Pickup a passenger going to Sunny Skies Park.
 
 Go to Sunny Skies Park: north, 1st left, 3rd left, 1st left.
 
@@ -71,8 +73,6 @@ Pickup a passenger going to the Riverview Bridge.
 Go to Riverview Bridge: north, 4th left.
 
 Go to Sunny Skies Park: west, 2nd left, 1st left.
-
-Switch to plan "total" if no one is waiting.
 
 Switch to plan "lab".
 
@@ -109,9 +109,6 @@ Pickup a passenger going to Narrow Path Park.
 Go to Narrow Path Park: north, 1st right, 1st left, 1st right.
 
 Pickup a passenger going to Addition Alley.
-
-Switch to plan "print" if no one is waiting.
-
 Pickup a passenger going to Addition Alley.
 
 Go to Addition Alley: east, 1st right, 1st right, 1st left.
@@ -131,7 +128,5 @@ Go to The Babelfishery: north, 1st right, 1st right.
 Pickup a passenger going to the Post Office.
 
 Go to Post Office: north, 1st left, 1st right.
-
-[end]
 
 Go to the Taxi Garage: north, 1st right, 1st left, 1st right.
