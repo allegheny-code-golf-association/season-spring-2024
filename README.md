@@ -9,10 +9,15 @@ In computational linguistics, there exists a simple, but descriptive index of th
 "Levenshtein distance." Described much more simply than the Wikipedia page for the concept, it's really a number that describes _how many changes
 would need to be made_ to any two words in order to create the equivalent string. For example:
 ```
-l_i_ne -> l_a_ne: distance 1
+line -> lane: distance 1
 ```
-In the above example, there's really only `1` letter different between them. So, we'd say that they have a Levenshtein distance of `1`. That's great.
-What's even greater? Implementing the functionality in a language that's about...driving a distance. 
+In the above example, there's really only `1` letter different between them. So, we'd say that they have a Levenshtein distance of `1`. 
+```
+driven -> coding: distance 6
+```
+For this example, everything needs to change! So, we'd have a distance of `6`.
+
+That's great. What's even greater? Implementing the functionality in a language that's about...driving a distance. 
 
 This challenge uses a language called `Taxi`, which doesn't leave much room for proper golfing. In short, the language is all about driving a (you
 guessed it), _taxi_. 
