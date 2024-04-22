@@ -1,7 +1,7 @@
 ![Green square on deep blue background with words "Allegheny Code Golf Association" in foreground, white](https://github.com/allegheny-college-cmpsc-201-spring-2024/golf/assets/1552764/d3ee6a91-74c9-482b-84eb-ec9a2e8dee05)
 
 [![Language: Taxi](https://img.shields.io/badge/Language-Taxi-yellow.svg)](https://bigzaphod.github.io/Taxi/)
-![Par: 3202 bytes](https://img.shields.io/badge/Par-3202_bytes-green)
+![Par: 1,336.40 units]((https://img.shields.io/badge/Par-1336.40_units-green))
 
 # ⛳ Code Golf: Hole 14 - Going the Distance
 
@@ -23,6 +23,17 @@ This challenge uses a language called `Taxi`, which doesn't leave much room for 
 guessed it), _taxi_. 
 
 ## Notes to players
+
+* this challenge must pass `3` checks using user input; these are:
+  * `trial -> trail`
+  * `shoe tome -> tone poem`
+  * `fun house -> big manor`
+* to test, there exists a `debug` mode
+  * see [14/src/main/java/cfh/taxi/cli/Main.java](14/src/main/java/cfh/taxi/cli/Main.java) for more
+* This program is not assessed in _bytes_, but in total units traveled; your goal is to complete the problems in the shortest amount of
+covered distance possible
+
+## Special `Taxi` language resources
 
 The creator of the language, @bigzaphod, provides a helpful map for our endeavor:
 

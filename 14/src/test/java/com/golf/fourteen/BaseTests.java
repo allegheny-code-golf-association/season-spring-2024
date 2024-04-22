@@ -1,4 +1,4 @@
-package com.interpreter.codelike;
+package com.interpreter.taxi;
 
 import java.io.ByteArrayOutputStream;
 import java.io.ByteArrayInputStream;
@@ -20,6 +20,7 @@ import java.security.DigestInputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.math.BigInteger;
+import java.util.regex.*;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -31,6 +32,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.Matchers.matchesPattern;
+import static org.hamcrest.CoreMatchers.not;
 
 import org.junit.contrib.java.lang.system.ExpectedSystemExit;
 
@@ -74,13 +80,35 @@ class BaseTests {
   @Test
   @ParameterizedTest
   void testProgramOutput(String[] args) throws Exception {
-    ByteArrayInputStream in = new ByteArrayInputStream("taxi fair\ntaxi fare\n".getBytes());
-    System.setIn(in);
-    Main.main(args);
-    assertEquals(
-      "",
-      outContent.toString().strip()
-    );
+    String[] tests = {"trial\ntrail\n", "shoe tome\ntone poem\n", "fun house\nbig manor\n"};
+    String[] outcomes = {"2\n", "6\n", "8\n"};
+    for(int i = 0; i < tests.length; i ++){
+      ByteArrayInputStream in = new ByteArrayInputStream(tests[i].getBytes());
+      System.setIn(in);
+      Main.main(args);
+      assertThat(
+        outContent.toString(),
+        containsString(outcomes[i])
+      );
+      assertThat(
+        outContent.toString(),
+        containsString("The taxi is back in the garage.")
+      );
+    }
+    restoreStreams();
+    totalOutputStats();
+  }
+
+  void totalOutputStats() {
+    Pattern distPattern = Pattern.compile("([0-9]+\\.[0-9]+) units");
+    Matcher distMatcher = distPattern.matcher(outContent.toString());
+    System.out.println("FINAL STATS");
+    double sum = 0;
+    while(distMatcher.find()) {
+      double metric = Double.parseDouble(distMatcher.group(1));
+      sum += metric;
+    }
+    System.out.println(String.format("%1$,.2f units traveled.", sum));
   }
 
   @AfterAll

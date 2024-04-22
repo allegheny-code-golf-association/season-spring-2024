@@ -212,9 +212,9 @@ public class Program {
                 inpout.error("%nThe boss couldn't find your taxi in the garage.  You're fired!%n%n");
             }
         }
-        inpout.log(null, "%.2f credits", taxi.cash() / 100.0);
-        inpout.log(null, "%.1f gas left in tank", taxi.tank());
-        inpout.log(null, "%.1f units travelled", taxi.distance());
+        inpout.print("%.2f credits", taxi.cash() / 100.0);
+        inpout.print("%.1f gas left in tank", taxi.tank());
+        inpout.print("%.1f units travelled", taxi.distance());
         List<Passenger> list = taxi.passengers();
         if (!list.isEmpty()) {
             inpout.log(PRINT, "%d passengers in taxy", list.size());

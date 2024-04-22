@@ -58,7 +58,7 @@ public class Main {
         @Override
         public boolean isLogging(Level level) {
           // Note: to turn on debug logging, set return value to true
-          return true;
+          return false;
         }
 
         @Override
