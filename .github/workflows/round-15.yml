@@ -4,12 +4,12 @@ on:
   push:
     branches: [round-15]
 
-jobs: 
+jobs:
   Score:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      with: 
+      with:
         fetch-depth: '0'
     - name: Setup Maven
       if: always()
