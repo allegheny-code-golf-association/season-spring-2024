@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
  
-  <groupId>cfh.zirconium.cli</groupId>
+  <groupId>com.interpreter.lox</groupId>
   <artifactId>fifteen</artifactId>
   <version>0.15.0</version>
  
@@ -77,9 +77,9 @@
       <version>1.4.0</version>
       <configuration>
           <executable>java</executable>
-          <mainClass>cfh.zirconium.cli.Main</mainClass>
+          <mainClass>com.interpreter.lox.Main</mainClass>
           <arguments>
-            <argument>${session.executionRootDirectory}/src/test/resources/main.zc</argument>
+            <argument>${session.executionRootDirectory}/src/test/resources/main.lox</argument>
           </arguments>
       </configuration>
       </plugin>
