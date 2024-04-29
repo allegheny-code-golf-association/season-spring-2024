@@ -9,7 +9,7 @@ We're revisiting an old stand-by to complete this, though; how would we do it in
 
 ## Notes to players
 
-* the output must contain _each_ product of division followed by the number of bits; that is, for the test number `256`:
+* the output must contain _each_ product of division followed by the number of bits; that is, for the test cases below:
 ```
 128
 64
