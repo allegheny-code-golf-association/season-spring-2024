@@ -28,16 +28,13 @@ To revisit the original challenge, head over to [Round 10](https://github.com/Al
 
 ## Tips
 
-Tips for golfing are available for the JASIC language and as general pointers:
-
 * [General tips for golfing with any language](https://codegolf.stackexchange.com/questions/5285/tips-for-golfing-in-all-languages)
 
 ## Requirements
 
 * this challenge must be completed using the `Lox` interpreter
   * the version of the interpreter contains everything we've done up to (and including) `Classes`
-* the program must run and correctly print the `10`x`10` grid of `*` characters
-* the program must be written in the `15/src/test/resources/main.lox` file
+* the program must be written in the `16/src/test/resources/main.lox` file
 
 ## Infrastructure
 
