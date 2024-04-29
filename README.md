@@ -1,7 +1,7 @@
 ![Green square on deep blue background with words "Allegheny Code Golf Association" in foreground, white](https://github.com/allegheny-college-cmpsc-201-spring-2024/golf/assets/1552764/d3ee6a91-74c9-482b-84eb-ec9a2e8dee05)
 
 ![Language: Lox](https://img.shields.io/badge/Language-Lox-pink.svg)
-![Par: 282 bytes](https://img.shields.io/badge/Par-73_bytes-green)
+![Par: 72 bytes](https://img.shields.io/badge/Par-72_bytes-green)
 
 # ⛳ Code Golf: Hole 16 - It's (Still) Hip to be a Square
 
