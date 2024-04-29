@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
  
   <groupId>com.interpreter.lox</groupId>
-  <artifactId>fifteen</artifactId>
-  <version>0.15.0</version>
+  <artifactId>sixteen</artifactId>
+  <version>0.16.0</version>
  
   <name>HoleFifteen</name>
   <url>https://github.com/allegheny-college-cmpsc-201-spring-2024</url>

@@ -1,25 +1,21 @@
-package com.golf.six;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package com.golf.ten;
 
 import java.io.ByteArrayOutputStream;
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.File;
+import java.nio.file.Files;
+import java.io.InputStream;
 import java.io.PrintStream;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.interpreter.lox.Main;
 
@@ -51,22 +47,19 @@ class BaseTests {
     );
   }
 
+  static String getFullProgramTestOutput() throws Exception {
+    URL resource = BaseTests.class.getClassLoader().getResource("test.out");
+    String file = Paths.get(resource.toURI()).toFile().getAbsolutePath();
+    return new String(Files.readAllBytes(Paths.get(file)));
+  }
+
   @MethodSource
   @ParameterizedTest
   void testProgramOutput(String[] args) throws Exception {
     Main.main(args);
     assertEquals(
-        "**********\n" +
-"**********\n" +
-"**********\n" +
-"**********\n" +
-"**********\n" +
-"**********\n" +
-"**********\n" +
-"**********\n" +
-"**********\n" +
-"**********\n",
-        outContent.toString()
+      getFullProgramTestOutput().trim(),
+      outContent.toString().strip()
     );
   }
 

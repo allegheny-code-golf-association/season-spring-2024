@@ -1,6 +1,6 @@
 setup: |
-  echo "🏌️    [Score] $(wc -c 15/src/test/resources/main.lox | awk '{print $1}') bytes"
+  echo "🏌️    [Score] $(wc -c 16/src/test/resources/main.lox | awk '{print $1}') bytes"
 ---
-- description: \[Round 15] Executes successfully
-  category: Round 15
-  command: mvn clean compile test -U -f '15/pom.xml'
+- description: \[Round 16] Executes successfully
+  category: Round 16
+  command: mvn clean compile test -U -f '16/pom.xml'

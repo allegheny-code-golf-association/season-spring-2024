@@ -3,25 +3,27 @@
 ![Language: Lox](https://img.shields.io/badge/Language-Lox-pink.svg)
 ![Par: 282 bytes](https://img.shields.io/badge/Par-73_bytes-green)
 
-# ⛳ Code Golf: Hole 15 - Back to BASIC(s) (Lox Edition)
+# ⛳ Code Golf: Hole 16 - It's (Still) Hip to be a Square
 
-This one's a blast from our recent past; Your goal is to print the following `10`x`10` grid of stars:
+Your task seems deceptively simple: print all squares from `1` to `100`. _But_ what happens when a language is _completely function-oriented_
+and _lacks proper iterators_? Well, you've got that on `Lox` (funny joke, Commissioner); even after all of our work, `Lox` doesn't either!
+
+When we write "print all squares", we mean that the output should look something like:
+```bash
+1
+4
+9
+16
+25
+36
+49
+64
+81
+100
+.
+.
+.
 ```
-**********
-**********
-**********
-**********
-**********
-**********
-**********
-**********
-**********
-**********
-```
-However, unlike last time, we're doing this thing in `Lox`! The margin for par is pretty slim, but you should be able to use
-your `Lox` knowledge, accumulated over the course of the semester, to shave at least `33%` (or more!) off of the code. This
-challenge is a bit different, as the solution _is not in the repository history_! If you'd like to revisit how this was
-implemented in the past, head on over to [Round 6](https://github.com/Allegheny-Code-Colf-Association/season-spring-2024/tree/round-6).
 
 ## Tips
 
