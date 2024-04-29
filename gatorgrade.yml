@@ -1,6 +1,11 @@
 setup: |
-  echo "🏌️    [Score] $(wc -c 17/src/test/resources/main.lox | awk '{print $1}') bytes"
+  echo "🏌️  Score $(wc -c 18/reflection.md | awk '{print $1}') bytes"
 ---
-- description: \[Round 17] Executes successfully
-  category: Round 17
-  command: mvn clean compile test -U -f '17/pom.xml'
+- 18/reflection.md:
+  - description: \[Round 18] Executes successfully
+    category: Round 18
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
