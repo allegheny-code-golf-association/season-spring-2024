@@ -3,32 +3,31 @@
 ![Language: Lox](https://img.shields.io/badge/Language-Lox-pink.svg)
 ![Par: 282 bytes](https://img.shields.io/badge/Par-73_bytes-green)
 
-# ⛳ Code Golf: Hole 16 - It's (Still) Hip to be a Square
-
-Your task seems deceptively simple: print all squares from `1` to `100`. _But_ what happens when a language is _completely function-oriented_
-and _lacks proper iterators_? Well, you've got that on `Lox` (funny joke, Commissioner); even after all of our work, `Lox` doesn't either!
-
-When we write "print all squares", we mean that the output should look something like:
-```bash
-1
-4
-9
-16
-25
-36
-49
-64
-81
-100
-.
-.
-.
 ```
-To revisit the original challenge, head over to [Round 10](https://github.com/Allegheny-Code-Colf-Association/season-spring-2024/tree/round-10).
+How many bits does it take to store a given number? The world may never know except that, well, _you'll know_ because that's the challenge this week.
+We're revisiting an old stand-by to complete this, though; how would we do it in `Lox`?
+
+## Notes to players
+
+* the output must contain _each_ product of division followed by the number of bits; that is, for the test number `256`:
+```
+128
+64
+32
+16
+8
+4
+2
+1
+0
+9
+```
+
+* this program  _does not take user input_; there is only one test case: `256`
+
+To revisit the original challenge, head over to [Round 13](https://github.com/Allegheny-Code-Colf-Association/season-spring-2024/tree/round-13).
 
 ## Tips
-
-Tips for golfing are available for the JASIC language and as general pointers:
 
 * [General tips for golfing with any language](https://codegolf.stackexchange.com/questions/5285/tips-for-golfing-in-all-languages)
 
@@ -36,8 +35,7 @@ Tips for golfing are available for the JASIC language and as general pointers:
 
 * this challenge must be completed using the `Lox` interpreter
   * the version of the interpreter contains everything we've done up to (and including) `Classes`
-* the program must run and correctly print the `10`x`10` grid of `*` characters
-* the program must be written in the `15/src/test/resources/main.lox` file
+* the program must be written in the `17/src/test/resources/main.lox` file
 
 ## Infrastructure
 
