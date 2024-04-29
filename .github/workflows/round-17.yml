@@ -1,8 +1,8 @@
-name: Round 16
+name: Round 17
 
 on:
   push:
-    branches: [round-16]
+    branches: [round-17]
 
 jobs: 
   Score:
@@ -29,13 +29,13 @@ jobs:
         sudo python -m pip install --upgrade pip
         sudo python -m pip install gatorgrade --ignore-installed PyYAML
       if: always()
-    - name: Score Round 16
+    - name: Score Round 17
       id: score
       run: |
-        export PAR=72
-        export BYTE_SCORE=$(wc -c 16/src/test/resources/main.lox | awk '{print $1}')
+        export PAR=181
+        export BYTE_SCORE=$(wc -c 17/src/test/resources/main.lox | awk '{print $1}')
         export DIFFERENCE=$((BYTE_SCORE-PAR))
-        mvn test -f "16/pom.xml" -q
+        mvn test -f "17/pom.xml" -q
         gatorgrade --config gatorgrade.yml --report file json gatorgrade_summary.json
         cat > $GITHUB_STEP_SUMMARY << EOF
         ![Score: $(echo ${BYTE_SCORE#-}) bytes](https://img.shields.io/badge/Score-$(echo $BYTE_SCORE)_bytes_(${DIFFERENCE#-})-green)
