@@ -35,7 +35,7 @@ jobs:
         export PAR=73
         export BYTE_SCORE=$(wc -c 15/src/test/resources/main.lox | awk '{print $1}')
         export DIFFERENCE=$((BYTE_SCORE-PAR))
-        mvn test -f "14/pom.xml" -q
+        mvn test -f "15/pom.xml" -q
         gatorgrade --config gatorgrade.yml --report file json gatorgrade_summary.json
         cat > $GITHUB_STEP_SUMMARY << EOF
         ![Score: $(echo ${BYTE_SCORE#-}) bytes](https://img.shields.io/badge/Score-$(echo $BYTE_SCORE)_bytes_(${DIFFERENCE#-})-green)
