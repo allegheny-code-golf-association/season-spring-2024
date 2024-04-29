@@ -25,8 +25,6 @@ implemented in the past, head on over to [Round 6](https://github.com/Allegheny-
 
 ## Tips
 
-Tips for golfing are available for the JASIC language and as general pointers:
-
 * [General tips for golfing with any language](https://codegolf.stackexchange.com/questions/5285/tips-for-golfing-in-all-languages)
 
 ## Requirements
