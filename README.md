@@ -24,6 +24,7 @@ When we write "print all squares", we mean that the output should look something
 .
 .
 ```
+To revisit the original challenge, head over to [Round 10](https://github.com/Allegheny-Code-Colf-Association/season-spring-2024/tree/round-10).
 
 ## Tips
 
