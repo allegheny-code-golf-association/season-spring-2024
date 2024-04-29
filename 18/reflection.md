@@ -43,3 +43,8 @@
 ## What suggestions do you have for the Commissioner and their insufferable, useless league?
 
 `TODO`
+
+## Is it a good day to golf?
+
+- [ ] Yes
+- [ ] No
