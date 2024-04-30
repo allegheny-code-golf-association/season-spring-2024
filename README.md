@@ -3,7 +3,6 @@
 ![Language: Lox](https://img.shields.io/badge/Language-Lox-pink.svg)
 ![Par: 181 bytes](https://img.shields.io/badge/Par-181_bytes-green)
 
-```
 How many bits does it take to store a given number? The world may never know except that, well, _you'll know_ because that's the challenge this week.
 We're revisiting an old stand-by to complete this, though; how would we do it in `Lox`?
 
